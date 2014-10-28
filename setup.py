@@ -4,7 +4,7 @@ import os
 import sys
 from distutils.core import setup
 
-from greenclock.version import __version__
+#from greenclock.version import __version__
 
 # See: http://docs.python.org/3.1/distutils/uploading.html
 # .pypirc file should look like:
@@ -17,7 +17,7 @@ if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload -r pypi')
     sys.exit()
 
-VERSION = __version__[:__version__.index('-')]
+VERSION = '0.3.0'
 
 def long_description():
     """Get the long description from the README"""
